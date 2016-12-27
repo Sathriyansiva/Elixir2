@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Single List Item Design -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listItemView"
+    android:layout_gravity="top"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+<TextView
+    android:id="@+id/label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dip"
+    android:textSize="16dip"
+    android:text="@string/customer_name"
+    android:textStyle="bold" >
+</TextView>
+
+
+    <TextView
+        android:id="@+id/otID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label"
+        android:padding="10dip"
+        android:textSize="16dip"
+        android:text="@string/otw"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/vehicle_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otID"
+        android:padding="10dip"
+        android:textSize="16dip"
+        android:text="@string/otw"
+        android:textStyle="bold"
+        android:visibility="gone">
+    </TextView>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="10dip"
+        android:textSize="16dip"
+        android:text="@string/status"
+        android:textStyle="bold" >
+    </TextView>
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="10dip"
+        android:background="@android:color/darker_gray"
+        android:text="Delete"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:onClick="deleteListItem"
+
+        />
+</RelativeLayout>
